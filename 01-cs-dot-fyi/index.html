@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:slnt@-15&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>writings.dev clone</title>
+  </head>
+  <body class="bg-neutral-900 min-h-screen flex justify-between flex-col items-center">
+    <!-- HEADER -->
+    <header
+      id="nav"
+      class="pt-10 flex justify-between items-center container text-white"
+    >
+      <a class=""><img class="w-24" src="./logo.svg" alt="logo" /></a>
+      <nav id="links" class="text-md flex gap-4 font-light">
+        <a href="#" class="">Home</a>
+        <a href="#" class="">Explore</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <div
+      id="hero"
+      class="flex container flex-col justify-start gap-4 mt-16">
+      <h1 class="text-white text-9xl font-black">cs.fyi</h1>
+      <h2 class="text-2xl text-neutral-400">
+        Frontend, Backend, DevOps and everything in between.
+      </h2>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="w-screen mt-16">
+      <div class="container w-full flex flex-col items-center justify-center gap-3 justify-self-center">
+       <div class="border-b border-neutral-100 flex w-full py-2 justify-between items-center">
+         <h3 class="text-2xl text-white">Deploy to ECS with Fargate using Terraform</h3>
+         <span class="text-neutral-500 text-xl">Nov 3, 2023</span>
+       </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="my-36 flex container items-center">
+      <div class="flex w-full justify-center">
+        <span class="font-medium tracking-wide text-lg text-neutral-400">© All rights reserved — cs.fyi — (This is just a clone!)</span>
+      </div>
+    </footer>
+  </body>
+</html>

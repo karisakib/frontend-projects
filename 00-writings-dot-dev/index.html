@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:slnt@-15&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>writings.dev clone</title>
+  </head>
+  <body class="bg-[#232830] flex justify-center flex-col items-center">
+    <!-- HEADER -->
+    <header
+      id="nav"
+      class="pt-10 flex justify-between items-center container text-white"
+    >
+      <span id="site-name" class="text-xl font-light">writings.dev</span>
+      <nav id="links" class="text-md flex gap-4 font-light">
+        <a href="#" class="">categories</a>
+        <a href="#" class="">articles</a>
+        <a href="#" class="">about</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <div
+      id="hero"
+      class="flex flex-col items-center justify-center gap-4 mt-16"
+    >
+      <img class="w-28" src="./logo.svg" alt="logo" />
+      <h1 id="hero-text" class="text-[#ff7575]">Writings for Developers</h1>
+      <p class="text-md font-light text-white">
+        Curated collection of articles for busy developers
+      </p>
+    </div>
+
+    <main class="border-y border-[#4D4D4D] w-screen mt-16">
+      <div
+        class="container flex flex-col items-center justify-center gap-3 justify-self-center"
+      >
+        <div
+          id="filters"
+          class="flex w-full justify-self-center my-4 justify-between"
+        >
+          <div class="flex gap-2">
+            <img class="w-4" src="./grid-icon.svg" alt="Grid sorter" />
+            <img class="w-4" src="./list-icon.svg" alt="List sorter" />
+          </div>
+          <div
+            id="filter-text"
+            class="flex text-[#909090] pl-6 text-md w-full justify-between *:hover:text-[#ff7575] *:hover:cursor-pointer"
+          >
+            <span>JavaScript</span>
+            <span>DevOps</span>
+            <span>Cloud</span>
+            <span>Terraform</span>
+            <span>Architecture</span>
+            <span>Scalability</span>
+            <!-- TODO: Figure out why gradient is not working -->
+            <span class="bg-linear-to-r from-transparent to-[#232830]/25"
+              >Backend</span
+            >
+          </div>
+        </div>
+
+        <div
+          id="grid"
+          class="container grid grid-cols-3 justify-center items-center gap-6 mb-18"
+        >
+          <div
+            class="bg-white text-black rounded-2xl h-72 px-4 py-4 flex flex-col justify-start"
+          >
+            <div class="flex justify-center w-full h-2/5">
+              <!-- TODO: Fix image sizing issues -->
+              <img
+                class="object-cover object-top w-full rounded-2xl"
+                src="https://placecats.com/300/200"
+                alt=""
+              />
+            </div>
+            <span class="font-semibold text-sm/5 mt-4"
+              >Build continuous integration pipelines with GitHub Actions</span
+            >
+            <div class="line-clamp-3 mt-2">
+              <p class="text-xs text-black/80">
+                GitHub actions provide a really powerful way to integrate
+                continuous integration and delivery into your applications.
+              </p>
+            </div>
+            <div class="flex gap-6 text-xs items-end *:text-black/80 grow">
+              <span>June 24, 2022</span>
+              <span>&bull;</span>
+              <span>DevOps</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="pagination" class="text-[#909090] *:px-3 *:py-3 mb-24 *:hover:border-t-2 *:hover:border-[#ff7575] *:hover:text-[#ff7575] *:hover:cursor-pointer">
+          <span id="prev">Previous</span>
+          <span>1</span>
+          <span class="border-t-2 border-[#ff7575] text-[#ff7575]">2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span id="next">Next</span>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-6 flex container justify-start">
+      <div class="flex justify-self-start gap-4 text-white">
+        <span class="font-medium tracking-wide text-md">writings.dev</span>
+        <span class="text-xs bg-[#4699E0] flex px-2 py-1 rounded"
+          >by @karisakib</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
